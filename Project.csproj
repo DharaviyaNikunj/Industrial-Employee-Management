@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C14360C5-FB15-4042-AFF7-90A6FE583170}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendance.Designer.cs">
+      <DependentUpon>Attendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="connection.cs" />
+    <Compile Include="Designation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Designation.Designer.cs">
+      <DependentUpon>Designation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee work.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee work.Designer.cs">
+      <DependentUpon>Employee work.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_details.Designer.cs">
+      <DependentUpon>Employee_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmdaily_salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdaily_salary.Designer.cs">
+      <DependentUpon>frmdaily_salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmemp_type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmemp_type.Designer.cs">
+      <DependentUpon>frmemp_type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmonth_salarycs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmonth_salarycs.Designer.cs">
+      <DependentUpon>frmmonth_salarycs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Join Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Join Details.Designer.cs">
+      <DependentUpon>Join Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Leave.Designer.cs">
+      <DependentUpon>Leave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shift.Designer.cs">
+      <DependentUpon>Shift.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Attendance.resx">
+      <DependentUpon>Attendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designation.resx">
+      <DependentUpon>Designation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee work.resx">
+      <DependentUpon>Employee work.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_details.resx">
+      <DependentUpon>Employee_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdaily_salary.resx">
+      <DependentUpon>frmdaily_salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmemp_type.resx">
+      <DependentUpon>frmemp_type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmonth_salarycs.resx">
+      <DependentUpon>frmmonth_salarycs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Join Details.resx">
+      <DependentUpon>Join Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leave.resx">
+      <DependentUpon>Leave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Shift.resx">
+      <DependentUpon>Shift.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
